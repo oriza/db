@@ -1,0 +1,26 @@
+[
+  {
+    "name": "belföld",
+    "alias": ["belföld", "belfold", "itthon", "kozelet", "közélet", "budapest"]
+  },
+  {
+    "name": "külföld",
+    "alias": ["külföld", "kulfold", "nagyvilag", "nagyvilág", "vilag", "világ"]
+  },
+  {
+    "name": "gazdaság",
+    "alias": ["gazdaság", "gazdasag", "penz", "pénz", "kkv"]
+  },
+  {
+    "name": "sport",
+    "alias": ["sport", "f1", "futball", "foci"]
+  },
+  {
+    "name": "kultúra",
+    "alias": ["kultúra", "zene", "kultura"]
+  },
+  {
+    "name": "tudomány",
+    "alias": ["tudomány", "tudomany", "tech", "techbazis"]
+  }
+]

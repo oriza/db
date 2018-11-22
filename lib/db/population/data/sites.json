@@ -1,0 +1,554 @@
+[
+  {
+    "name" : "népszabadság",
+    "url" : "http://nol.hu",
+    "feed" : "http://nol.hu/rss/mindencsatorna",
+    "state": "active",
+    "slug" : "nepszabadsag",
+    "selectors": {
+      "archive": {
+        "container": ".rovatajanlo",
+        "title": "h2 a",
+        "author": "",
+        "description": "p",
+        "published": ".datum.cikk-date-label",
+        "category": ".rovat"
+      },
+      "article": {
+        "title": ".content-title h1",
+        "authors": ".szerzo a",
+        "published": ".datum",
+        "category": ".cikk-cimkek li:first-of-type",
+        "content": ".cikk-torzs"
+      }
+    }
+  },
+  {
+    "name" : "nyugat",
+    "url" : "http://nyugat.hu",
+    "feed" : "http://www.nyugat.hu/tartalom/rss",
+    "state": "active",
+    "slug" : "nyugat",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "átlátszó",
+    "url" : "http://atlatszo.hu",
+    "feed" : "https://atlatszo.hu/feed/",
+    "state": "selected",
+    "slug" : "atlatszo",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "444",
+    "url" : "http://444.hu",
+    "feed" : "https://444.hu/feed",
+    "state": "selected",
+    "slug" : "444",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "index",
+    "url" : "http://index.hu",
+    "feed" : "https://index.hu/24ora/rss/",
+    "state": "selected",
+    "slug" : "index",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "24",
+    "url" : "http://24.hu",
+    "feed" : "https://24.hu/feed/",
+    "state": "active",
+    "slug" : "24",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "origo",
+    "url" : "http://origo.hu",
+    "feed" : "http://www.origo.hu/contentpartner/rss/origoall/origo.xml",
+    "state": "selected",
+    "slug" : "origo",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "168 óra",
+    "url" : "http://168ora.hu",
+    "feed" : "http://168ora.hu/rss",
+    "state": "active",
+    "slug" : "168-ora",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "hvg",
+    "url" : "http://hvg.hu",
+    "feed" : "http://hvg.hu/rss",
+    "state": "selected",
+    "slug" : "hvg",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "magyar narancs",
+    "url" : "http://magyarnarancs.hu",
+    "feed" : "http://magyarnarancs.hu/rss/",
+    "state": "active",
+    "slug" : "magyar-narancs",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "válasz",
+    "url" : "http://valasz.hu",
+    "feed" : "http://valasz.hu/rss",
+    "state": "selected",
+    "slug" : "valasz",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "mandiner",
+    "url" : "http://mandiner.hu",
+    "feed" : "http://mandiner.hu/rss/",
+    "state": "active",
+    "slug" : "mandiner",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "vs",
+    "url" : "http://vs.hu",
+    "feed" : "https://vs.hu/feed",
+    "state": "selected",
+    "slug" : "vs",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "pestisrácok",
+    "url" : "http://pestisracok.hu",
+    "feed" : "https://pestisracok.hu/feed/",
+    "state": "active",
+    "slug" : "pestisracok",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "magyar nemzet",
+    "url" : "http://mno.hu",
+    "feed" : "https://mno.hu/rss/",
+    "state": "selected",
+    "slug" : "magyar-nemzet",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "888",
+    "url" : "http://888.hu",
+    "feed" : "https://888.hu/rss/",
+    "state": "active",
+    "slug" : "888",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "magyar idők",
+    "url" : "http://magyaridok.hu",
+    "feed" : "https://magyaridok.hu/feed/",
+    "state": "selected",
+    "slug" : "magyar-idok",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "alfahír",
+    "url" : "http://alfahir.hu",
+    "feed" : "https://alfahir.hu/rss.xml",
+    "state": "selected",
+    "slug" : "alfahir",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "népszava",
+    "url" : "http://nepszava.hu",
+    "feed" : "http://nepszava.hu/rss/",
+    "state": "active",
+    "slug": "nepszava",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "faktor",
+    "url" : "http://faktor.hu",
+    "feed" : "http://faktor.hu/rss/",
+    "state": "active",
+    "slug" : "faktor",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name" : "azonnali",
+    "url" : "http://azonnali.hu/",
+    "feed" : "http://azonnali.hu/rss",
+    "state": "active",
+    "slug" : "azonnali",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name": "zoom",
+    "url": "https://zoom.hu/",
+    "feed": "https://zoom.hu/feed/",
+    "state": "active",
+    "slug": "zoom",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  },
+  {
+    "name": "mérce",
+    "url": "https://merce.hu/",
+    "feed": "https://merce.hu/feed/",
+    "state": "selected",
+    "slug": "merce",
+    "selectors": {
+      "archive": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "container": "",
+        "description": ""
+      },
+      "article": {
+        "title": "",
+        "category": "",
+        "authors": "",
+        "published_at": "",
+        "content": ""
+      }
+    }
+  }
+]
