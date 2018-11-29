@@ -14,10 +14,10 @@ defmodule Db.Population do
     |> Jason.decode!
     |> Enum.each(fn site ->
       %{"selectors" => %{"archive" => archive, "article" => article}} = site
-      {:ok, %{id: site_id}} = Site.create(site)
+      {:ok, site} = Site.create(site)
 
-      ArchiveSelector.create(Map.put(archive, "site", site))
-      ArticleSelector.create(Map.put(article, "site_id", site_id))
+      ArchiveSelector.create(Map.put(archive, "site_id", site.id))
+      ArticleSelector.create(Map.put(article, "site_id", site.id))
     end)
   end
 
