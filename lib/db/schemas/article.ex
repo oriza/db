@@ -9,6 +9,7 @@ defmodule Db.Schema.Article do
     field :html, :string
     field :text, :string
     field :published_at, :utc_datetime
+    field :author, :string
 
     belongs_to :site, Db.Schema.Site
     belongs_to :category, Db.Schema.Category
@@ -18,7 +19,7 @@ defmodule Db.Schema.Article do
 
   def changeset(article, attrs) do
     article
-    |> cast(attrs, [:title, :url, :description, :html, :text, :published_at, :site_id, :category_id])
+    |> cast(attrs, [:title, :url, :description, :html, :text, :published_at, :author, :site_id, :category_id])
     |> validate_required([:url])
     |> unique_constraint(:url)
   end

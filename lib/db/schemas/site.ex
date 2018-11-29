@@ -6,6 +6,7 @@ defmodule Db.Schema.Site do
     field :name, :string
     field :url, :string
     field :feed, :string
+    field :archive, :string
     field :slug, :string
     field :state, :string
 
@@ -18,7 +19,7 @@ defmodule Db.Schema.Site do
 
   def changeset(site, attrs) do
     site
-    |> cast(attrs, [:name, :url, :feed, :slug, :state])
+    |> cast(attrs, [:name, :url, :feed, :archive, :slug, :state])
     |> validate_required([:url, :slug])
     |> unique_constraint(:url)
     |> unique_constraint(:slug)
