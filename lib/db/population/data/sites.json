@@ -7,36 +7,12 @@
     "slug" : "nepszabadsag",
     "selectors": {
       "archive": {
-        "container": ".rovatajanlo",
-        "title": "h2 a",
-        "author": "",
-        "description": "p",
-        "published": ".datum.cikk-date-label",
-        "category": ".rovat"
-      },
-      "article": {
-        "title": ".content-title h1",
-        "authors": ".szerzo a",
-        "published": ".datum",
-        "category": ".cikk-cimkek li:first-of-type",
-        "content": ".cikk-torzs"
-      }
-    }
-  },
-  {
-    "name" : "nyugat",
-    "url" : "http://nyugat.hu",
-    "feed" : "http://www.nyugat.hu/tartalom/rss",
-    "state": "active",
-    "slug" : "nyugat",
-    "selectors": {
-      "archive": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".cikkSzerzo",
+        "published_at": ".cikkDatum.centered",
+        "container": ".cikkBlock.kethasabos",
+        "description": ".lead"
       },
       "article": {
         "title": "",
@@ -44,6 +20,30 @@
         "authors": "",
         "published_at": "",
         "content": ""
+      }
+    }
+  },
+  {
+    "name" : "nyugat",
+    "url" : "https://nyugat.hu",
+    "feed" : "https://www.nyugat.hu/tartalom/rss",
+    "state": "active",
+    "slug" : "nyugat",
+    "selectors": {
+      "archive": {
+        "title": "h2 a",
+        "category": "",
+        "authors": "",
+        "published_at": ".publisheddiv",
+        "container": ".wrapper1",
+        "description": ".article_lead"
+      },
+      "article": {
+        "title": ".articlenode.articlecompactnode h1",
+        "category": "",
+        "authors": ".inner .articlenode.articlecompactnode .article_author",
+        "published_at": ".article_published",
+        "content": ".article_text.gainlayout"
       }
     }
   },
@@ -55,19 +55,19 @@
     "slug" : "atlatszo",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h3 a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".the_author",
+        "published_at": "time",
+        "container": "article",
+        "description": ".the_text"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": ".heading.n9 h1",
+        "category": ".heading.n9 a",
+        "authors": ".the_author.ib",
+        "published_at": ".the_post_date",
+        "content": ".the_content"
       }
     }
   },
@@ -79,19 +79,19 @@
     "slug" : "444",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h3 a",
         "category": "",
-        "authors": "",
+        "authors": ".byline__authors",
         "published_at": "",
-        "container": "",
-        "description": ""
+        "container": ".card",
+        "description": "p"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": "#headline h1",
+        "category": "#headline .byline__info .byline__category",
+        "authors": "#headline .byline__info .byline__authors",
+        "published_at": "#headline .byline__info span:nth-of-type(5)",
+        "content": "#content-main"
       }
     }
   },
@@ -103,19 +103,19 @@
     "slug" : "index",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".datum.cikk-date-label",
+        "container": ".rovatajanlo",
+        "description": "p"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": ".content-title h1",
+        "category": ".cikk-cimkek li:first-of-type",
+        "authors": ".szerzo a",
+        "published_at": ".datum",
+        "content": ".cikk-torzs"
       }
     }
   },
@@ -127,19 +127,19 @@
     "slug" : "24",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h3 a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".author-content",
+        "published_at": ".post-date",
+        "container": "article",
+        "description": ".lead.lead-after-wrap"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": ".post-title-wrapper h1",
+        "category": ".categori_name",
+        "authors": ".author-content a",
+        "published_at": ".author-content p",
+        "content": ".post-body"
       }
     }
   },
@@ -151,43 +151,43 @@
     "slug" : "origo",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h3 a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
+        "published_at": "span",
+        "container": ".archive-cikk",
         "description": ""
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": "#article-head h1",
+        "category": "#breadcrumb a",
+        "authors": ".article-author",
+        "published_at": "#article-date",
+        "content": "#article-text"
       }
     }
   },
   {
     "name" : "168 óra",
-    "url" : "http://168ora.hu",
-    "feed" : "http://168ora.hu/rss",
+    "url" : "https://168ora.hu",
+    "feed" : "https://168ora.hu/rss",
     "state": "active",
     "slug" : "168-ora",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "a",
         "category": "",
         "authors": "",
         "published_at": "",
-        "container": "",
-        "description": ""
+        "container": ".simple.list-element",
+        "description": "p"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": ".article-page-main-title",
+        "category": "#breadcrumb a",
+        "authors": ".top-bar",
+        "published_at": ".top-bar",
+        "content": "#article-content"
       }
     }
   },
@@ -199,43 +199,43 @@
     "slug" : "hvg",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".info span",
+        "published_at": "time",
+        "container": ".articlelist-element.clear",
+        "description": "p"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": ".article-title",
+        "category": ".info .uppercase",
+        "authors": ".author-name",
+        "published_at": ".article-datetime",
+        "content": ".article-main"
       }
     }
   },
   {
     "name" : "magyar narancs",
-    "url" : "http://magyarnarancs.hu",
-    "feed" : "http://magyarnarancs.hu/rss/",
+    "url" : "https://magyarnarancs.hu",
+    "feed" : "https://magyarnarancs.hu/rss/",
     "state": "active",
     "slug" : "magyar-narancs",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h4 a",
         "category": "",
-        "authors": "",
+        "authors": "em",
         "published_at": "",
-        "container": "",
-        "description": ""
+        "container": ".noimg",
+        "description": "p"
       },
       "article": {
-        "title": "",
+        "title": ".box_cikkhead h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".szerzoTextBg",
+        "published_at": ".update_time",
+        "content": ".cikkbody clr"
       }
     }
   },
@@ -247,19 +247,19 @@
     "slug" : "valasz",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
-        "authors": "",
+        "authors": ".szerzo",
         "published_at": "",
-        "container": "",
-        "description": ""
+        "container": ".text",
+        "description": ".lead"
       },
       "article": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".toolbar a",
+        "published_at": ".datum",
+        "content": ".szoveg"
       }
     }
   },
@@ -271,19 +271,19 @@
     "slug" : "mandiner",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".info",
+        "container": ".news_list_row",
+        "description": ".lead"
       },
       "article": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".articletext span:first-of-type",
+        "published_at": ".info",
+        "content": ".text"
       }
     }
   },
@@ -295,19 +295,19 @@
     "slug" : "vs",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h3",
         "category": "",
         "authors": "",
         "published_at": "",
-        "container": "",
-        "description": ""
+        "container": ".column",
+        "description": "p"
       },
       "article": {
-        "title": "",
+        "title": ".inner_content h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".author span span",
+        "published_at": ".date",
+        "content": ".content"
       }
     }
   },
@@ -319,19 +319,19 @@
     "slug" : "pestisracok",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": ".widget-full-list-text a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".widget-post-author",
+        "published_at": ".widget-post-date",
+        "container": ".infinite-post",
+        "description": "p"
       },
       "article": {
-        "title": "",
+        "title": ".story-title.entry-title",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".author-name a",
+        "published_at": ".post-date-wrap",
+        "content": "#content-area"
       }
     }
   },
@@ -343,19 +343,19 @@
     "slug" : "magyar-nemzet",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h3 a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".szerzo",
+        "published_at": ".datum",
+        "container": ".box",
+        "description": ".lead"
       },
       "article": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".szerzo",
+        "published_at": ".datum",
+        "content": ".content.hircikk.clearfix"
       }
     }
   },
@@ -367,19 +367,19 @@
     "slug" : "888",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "figcaption a",
         "category": "",
         "authors": "",
         "published_at": "",
-        "container": "",
-        "description": ""
+        "container": ".fig-wrap",
+        "description": ".text-box"
       },
       "article": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".text-wrap p a",
+        "published_at": ".note-block p",
+        "content": ".maincontent8"
       }
     }
   },
@@ -391,19 +391,19 @@
     "slug" : "magyar-idok",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".en-article-date",
+        "container": ".et_pb_row.article.clearfix",
+        "description": "p"
       },
       "article": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".en-article-author",
+        "published_at": ".en-article-dates-main",
+        "content": ".entry-content"
       }
     }
   },
@@ -415,19 +415,19 @@
     "slug" : "alfahir",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": ".views-field-title a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".views-field.views-field-created",
+        "container": ".views-row-first",
+        "description": ".views-field-field-lead"
       },
       "article": {
-        "title": "",
+        "title": "#page-title",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": "panel-pane.pane-custom.pane-1.pane-author",
+        "published_at": ".panel-pane:nth-of-type(3)",
+        "content": ".panel-pane.pane-entity-field.pane-node-body"
       }
     }
   },
@@ -439,19 +439,19 @@
     "slug": "nepszava",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".tags",
+        "container": ".ts",
+        "description": "p"
       },
       "article": {
-        "title": "",
+        "title": ".article-head h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": "#article-meta .new-window",
+        "published_at": "#article-date",
+        "content": "#article-content"
       }
     }
   },
@@ -463,19 +463,19 @@
     "slug" : "faktor",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".text",
+        "container": ".article-detail",
+        "description": "p a"
       },
       "article": {
-        "title": "",
+        "title": ".header h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".author-holder .text time",
+        "published_at": ".author-area .list li",
+        "content": ".ststst"
       }
     }
   },
@@ -487,19 +487,19 @@
     "slug" : "azonnali",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "a",
         "category": "",
         "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "published_at": ".datum",
+        "container": ".newsrow",
+        "description": "div:last-of-type"
       },
       "article": {
-        "title": "",
+        "title": ".home_title h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".editors",
+        "published_at": ".datum",
+        "content": ".content"
       }
     }
   },
@@ -511,19 +511,19 @@
     "slug": "zoom",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".author a",
+        "published_at": "li",
+        "container": ".zoom-list-item",
+        "description": ".lead-in"
       },
       "article": {
-        "title": "",
+        "title": "h1",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "authors": ".author .name",
+        "published_at": ".author",
+        "content": ".zoom-post-container p"
       }
     }
   },
@@ -535,19 +535,19 @@
     "slug": "merce",
     "selectors": {
       "archive": {
-        "title": "",
+        "title": ".entry-text a",
         "category": "",
-        "authors": "",
-        "published_at": "",
-        "container": "",
-        "description": ""
+        "authors": ".meta-author",
+        "published_at": "time",
+        "container": "article",
+        "description": "p"
       },
       "article": {
-        "title": "",
-        "category": "",
-        "authors": "",
-        "published_at": "",
-        "content": ""
+        "title": ".main-article-header h1",
+        "category": ".main-article-header .tag",
+        "authors": ".meta-data.track-cat .byline",
+        "published_at": ".meta-time",
+        "content": ".entry-content"
       }
     }
   }
