@@ -14,7 +14,7 @@ defmodule Db.Service.Site do
 
   """
   def lists do
-    Repo.all(Site)
+    Repo.all(Site) |> Repo.preload([:archive_selector, :article_selector])
   end
 
   @doc """
