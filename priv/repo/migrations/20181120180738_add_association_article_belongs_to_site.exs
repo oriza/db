@@ -3,7 +3,7 @@ defmodule Db.Repo.Migrations.AddAssociationArticleBelongsToSite do
 
   def change do
     alter table(:articles) do
-      add :site_id, references(:sites, on_delete: :nothing)
+      add :site_id, references(:sites, on_delete: :nilify_all)
     end
 
     create index(:articles, [:site_id])

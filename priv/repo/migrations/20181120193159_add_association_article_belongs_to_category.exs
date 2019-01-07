@@ -3,7 +3,7 @@ defmodule Db.Repo.Migrations.AddAssociationArticleBelongsToCategory do
 
   def change do
     alter table(:articles) do
-      add :category_id, references(:categories, on_delete: :nothing)
+      add :category_id, references(:categories, on_delete: :nilify_all)
     end
 
     create index(:articles, [:category_id])

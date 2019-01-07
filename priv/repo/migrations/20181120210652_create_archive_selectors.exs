@@ -9,7 +9,7 @@ defmodule Db.Repo.Migrations.CreateArchiveSelectors do
       add :description, :string
       add :published_at, :string
       add :category, :string
-      add :site_id, references(:sites, on_delete: :nothing)
+      add :site_id, references(:sites, on_delete: :delete_all)
 
       timestamps()
     end

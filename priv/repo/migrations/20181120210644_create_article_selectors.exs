@@ -8,7 +8,7 @@ defmodule Db.Repo.Migrations.CreateArticleSelectors do
       add :published_at, :string
       add :category, :string
       add :content, :string
-      add :site_id, references(:sites, on_delete: :nothing)
+      add :site_id, references(:sites, on_delete: :delete_all)
 
       timestamps()
     end
