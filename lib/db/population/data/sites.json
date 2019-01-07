@@ -1,10 +1,11 @@
 [
   {
-    "name" : "népszabadság",
-    "url" : "http://nol.hu",
-    "feed" : "http://nol.hu/rss/mindencsatorna",
-    "state": "active",
-    "slug" : "nepszabadsag",
+    "name": "népszabadság",
+    "url": "http://nol.hu",
+    "feed": "http://nol.hu/rss/mindencsatorna",
+    "archive": "http://nol.hu/belfold?page=1",
+    "state": "inactive",
+    "slug": "nepszabadsag",
     "selectors": {
       "archive": {
         "title": "h1",
@@ -24,11 +25,12 @@
     }
   },
   {
-    "name" : "nyugat",
-    "url" : "https://nyugat.hu",
-    "feed" : "https://www.nyugat.hu/tartalom/rss",
+    "name": "nyugat",
+    "url": "https://nyugat.hu",
+    "feed": "https://www.nyugat.hu/tartalom/rss",
+    "archive": "https://www.nyugat.hu/tartalom/rovat/kozelet/?offset=0",
     "state": "active",
-    "slug" : "nyugat",
+    "slug": "nyugat",
     "selectors": {
       "archive": {
         "title": "h2 a",
@@ -48,11 +50,12 @@
     }
   },
   {
-    "name" : "átlátszó",
-    "url" : "http://atlatszo.hu",
-    "feed" : "https://atlatszo.hu/feed/",
+    "name": "átlátszó",
+    "url": "https://atlatszo.hu",
+    "feed": "https://atlatszo.hu/feed/",
+    "archive": "https://atlatszo.hu/category/cikkek/adatigenylesek/",
     "state": "selected",
-    "slug" : "atlatszo",
+    "slug": "atlatszo",
     "selectors": {
       "archive": {
         "title": "h3 a",
@@ -72,11 +75,12 @@
     }
   },
   {
-    "name" : "444",
-    "url" : "http://444.hu",
-    "feed" : "https://444.hu/feed",
+    "name": "444",
+    "url": "https://444.hu",
+    "feed": "https://444.hu/feed",
+    "archive": "https://444.hu/archivum?page=1",
     "state": "selected",
-    "slug" : "444",
+    "slug": "444",
     "selectors": {
       "archive": {
         "title": "h3 a",
@@ -96,11 +100,12 @@
     }
   },
   {
-    "name" : "index",
-    "url" : "http://index.hu",
-    "feed" : "https://index.hu/24ora/rss/",
+    "name": "index",
+    "url": "https://index.hu",
+    "feed": "https://index.hu/24ora/rss/",
+    "archive": "https://index.hu/24ora/?word=1&pepe=1&tol=1999-01-01&ig=2018-03-03&s=",
     "state": "selected",
-    "slug" : "index",
+    "slug": "index",
     "selectors": {
       "archive": {
         "title": "h2 a",
@@ -115,16 +120,17 @@
         "category": ".cikk-cimkek li:first-of-type",
         "authors": ".szerzo a",
         "published_at": ".datum",
-        "content": ".cikk-torzs"
+        "content": ".cikk-torzs > :not(.nm_widget__wrapper)"
       }
     }
   },
   {
-    "name" : "24",
-    "url" : "http://24.hu",
-    "feed" : "https://24.hu/feed/",
+    "name": "24",
+    "url": "https://24.hu",
+    "feed": "https://24.hu/feed/",
+    "archive": "https://24.hu/belfold/",
     "state": "active",
-    "slug" : "24",
+    "slug": "24",
     "selectors": {
       "archive": {
         "title": "h3 a",
@@ -144,11 +150,12 @@
     }
   },
   {
-    "name" : "origo",
-    "url" : "http://origo.hu",
-    "feed" : "http://www.origo.hu/contentpartner/rss/origoall/origo.xml",
+    "name": "origo",
+    "url": "http://origo.hu",
+    "feed": "http://www.origo.hu/contentpartner/rss/origoall/origo.xml",
+    "archive": "http://www.origo.hu/hir-archivum/2017/20170301.html",
     "state": "selected",
-    "slug" : "origo",
+    "slug": "origo",
     "selectors": {
       "archive": {
         "title": "h3 a",
@@ -168,11 +175,12 @@
     }
   },
   {
-    "name" : "168 óra",
-    "url" : "https://168ora.hu",
-    "feed" : "https://168ora.hu/rss",
+    "name": "168 óra",
+    "url": "https://168ora.hu",
+    "feed": "https://168ora.hu/rss",
+    "archive": "https://168ora.hu/itthon",
     "state": "active",
-    "slug" : "168-ora",
+    "slug": "168-ora",
     "selectors": {
       "archive": {
         "title": "a",
@@ -192,11 +200,12 @@
     }
   },
   {
-    "name" : "hvg",
-    "url" : "http://hvg.hu",
-    "feed" : "http://hvg.hu/rss",
+    "name": "hvg",
+    "url": "https://hvg.hu",
+    "feed": "https://hvg.hu/rss",
+    "archive": "https://hvg.hu/vilag",
     "state": "selected",
-    "slug" : "hvg",
+    "slug": "hvg",
     "selectors": {
       "archive": {
         "title": "h2 a",
@@ -216,11 +225,12 @@
     }
   },
   {
-    "name" : "magyar narancs",
-    "url" : "https://magyarnarancs.hu",
-    "feed" : "https://magyarnarancs.hu/rss/",
+    "name": "magyar narancs",
+    "url": "https://magyarnarancs.hu",
+    "feed": "https://magyarnarancs.hu/rss/",
+    "archive": "https://magyarnarancs.hu/archivum_reszletes/2018/2",
     "state": "active",
-    "slug" : "magyar-narancs",
+    "slug": "magyar-narancs",
     "selectors": {
       "archive": {
         "title": "h4 a",
@@ -240,11 +250,12 @@
     }
   },
   {
-    "name" : "válasz",
-    "url" : "http://valasz.hu",
-    "feed" : "http://valasz.hu/rss",
-    "state": "selected",
-    "slug" : "valasz",
+    "name": "válasz",
+    "url": "http://valasz.hu",
+    "feed": "http://valasz.hu/rss",
+    "archive": "http://valasz.hu/rosta",
+    "state": "inactive",
+    "slug": "valasz",
     "selectors": {
       "archive": {
         "title": "h2 a",
@@ -264,11 +275,12 @@
     }
   },
   {
-    "name" : "mandiner",
-    "url" : "http://mandiner.hu",
-    "feed" : "http://mandiner.hu/rss/",
+    "name": "mandiner",
+    "url": "http://mandiner.hu",
+    "feed": "http://mandiner.hu/rss/",
+    "archive": "http://mandiner.hu/tag/belfold",
     "state": "active",
-    "slug" : "mandiner",
+    "slug": "mandiner",
     "selectors": {
       "archive": {
         "title": "a",
@@ -288,11 +300,12 @@
     }
   },
   {
-    "name" : "vs",
-    "url" : "http://vs.hu",
-    "feed" : "https://vs.hu/feed",
+    "name": "vs",
+    "url": "https://vs.hu",
+    "feed": "https://vs.hu/feed",
+    "archive": "https://vs.hu/archivum",
     "state": "selected",
-    "slug" : "vs",
+    "slug": "vs",
     "selectors": {
       "archive": {
         "title": "h3",
@@ -312,11 +325,12 @@
     }
   },
   {
-    "name" : "pestisrácok",
-    "url" : "http://pestisracok.hu",
-    "feed" : "https://pestisracok.hu/feed/",
+    "name": "pestisrácok",
+    "url": "https://pestisracok.hu",
+    "feed": "https://pestisracok.hu/feed/",
+    "archive": "https://pestisracok.hu/?s=",
     "state": "active",
-    "slug" : "pestisracok",
+    "slug": "pestisracok",
     "selectors": {
       "archive": {
         "title": ".widget-full-list-text a",
@@ -336,11 +350,12 @@
     }
   },
   {
-    "name" : "magyar nemzet",
-    "url" : "http://mno.hu",
-    "feed" : "https://mno.hu/rss/",
-    "state": "selected",
-    "slug" : "magyar-nemzet",
+    "name": "magyar nemzet",
+    "url": "https://mno.hu",
+    "feed": "https://mno.hu/rss/",
+    "archive": "https://mno.hu/belfold",
+    "state": "inactive",
+    "slug": "magyar-nemzet",
     "selectors": {
       "archive": {
         "title": "h3 a",
@@ -360,11 +375,12 @@
     }
   },
   {
-    "name" : "888",
-    "url" : "http://888.hu",
-    "feed" : "https://888.hu/rss/",
+    "name": "888",
+    "url": "https://888.hu",
+    "feed": "https://888.hu/rss/",
+    "archive": "https://888.hu/search-",
     "state": "active",
-    "slug" : "888",
+    "slug": "888",
     "selectors": {
       "archive": {
         "title": "figcaption a",
@@ -384,11 +400,12 @@
     }
   },
   {
-    "name" : "magyar idők",
-    "url" : "http://magyaridok.hu",
-    "feed" : "https://magyaridok.hu/feed/",
+    "name": "magyar idők",
+    "url": "https://magyaridok.hu",
+    "feed": "https://magyaridok.hu/feed/",
+    "archive": "https://magyaridok.hu/?s=",
     "state": "selected",
-    "slug" : "magyar-idok",
+    "slug": "magyar-idok",
     "selectors": {
       "archive": {
         "title": "h2 a",
@@ -408,11 +425,12 @@
     }
   },
   {
-    "name" : "alfahír",
-    "url" : "http://alfahir.hu",
-    "feed" : "https://alfahir.hu/rss.xml",
+    "name": "alfahír",
+    "url": "https://alfahir.hu",
+    "feed": "https://alfahir.hu/rss.xml",
+    "archive": "https://alfahir.hu/kereso?keresett_szoveg=",
     "state": "selected",
-    "slug" : "alfahir",
+    "slug": "alfahir",
     "selectors": {
       "archive": {
         "title": ".views-field-title a",
@@ -432,9 +450,10 @@
     }
   },
   {
-    "name" : "népszava",
-    "url" : "http://nepszava.hu",
-    "feed" : "http://nepszava.hu/rss/",
+    "name": "népszava",
+    "url": "https://nepszava.hu",
+    "feed": "https://nepszava.hu/rss/",
+    "archive": "https://nepszava.hu/belfold/",
     "state": "active",
     "slug": "nepszava",
     "selectors": {
@@ -456,11 +475,12 @@
     }
   },
   {
-    "name" : "faktor",
-    "url" : "http://faktor.hu",
-    "feed" : "http://faktor.hu/rss/",
+    "name": "faktor",
+    "url": "http://faktor.hu",
+    "feed": "http://faktor.hu/rss/",
+    "archive": "http://faktor.hu/fs-?",
     "state": "active",
-    "slug" : "faktor",
+    "slug": "faktor",
     "selectors": {
       "archive": {
         "title": "h2 a",
@@ -480,11 +500,12 @@
     }
   },
   {
-    "name" : "azonnali",
-    "url" : "http://azonnali.hu/",
-    "feed" : "http://azonnali.hu/rss",
+    "name": "azonnali",
+    "url": "http://azonnali.hu/",
+    "feed": "http://azonnali.hu/rss",
+    "archive": "http://azonnali.hu/kereses/",
     "state": "active",
-    "slug" : "azonnali",
+    "slug": "azonnali",
     "selectors": {
       "archive": {
         "title": "a",
@@ -504,33 +525,10 @@
     }
   },
   {
-    "name": "zoom",
-    "url": "https://zoom.hu/",
-    "feed": "https://zoom.hu/feed/",
-    "state": "active",
-    "slug": "zoom",
-    "selectors": {
-      "archive": {
-        "title": "h2 a",
-        "category": "",
-        "authors": ".author a",
-        "published_at": "li",
-        "container": ".zoom-list-item",
-        "description": ".lead-in"
-      },
-      "article": {
-        "title": "h1",
-        "category": "",
-        "authors": ".author .name",
-        "published_at": ".author",
-        "content": ".zoom-post-container p"
-      }
-    }
-  },
-  {
     "name": "mérce",
     "url": "https://merce.hu/",
     "feed": "https://merce.hu/feed/",
+    "archive": "https://merce.hu/search/+/page/",
     "state": "selected",
     "slug": "merce",
     "selectors": {
