@@ -1,8 +1,8 @@
-defmodule Db.Service.Article do
+defmodule Db.Article.Service do
   import Ecto.Query, warn: false
-  
+
   alias Db.Repo
-  alias Db.Schema.Article
+  alias Db.Article
 
   @doc """
   Returns the list of articles.
@@ -13,13 +13,14 @@ defmodule Db.Service.Article do
       [%Article{}, ...]
 
   """
-  def lists(site_ids, category_ids, limit \\ 20, offset \\ 1) do
+  def lists(site_ids, limit \\ 20, offset \\ 1) do
     Repo.all from a in Article,
       where: a.site_id in ^site_ids,
-      where: a.category_id in ^category_ids,
+      #where: a.category_id in ^category_ids,
       limit: ^limit,
       offset: ^offset,
-      order_by: [desc: a.published_at]
+      order_by: [desc: a.published_at],
+      preload: :site
   end
 
   @doc """
@@ -82,7 +83,7 @@ defmodule Db.Service.Article do
 
   """
   def update(%Article{} = article, attrs) do
-    
+
     article
     |> Article.changeset(attrs)
     |> Repo.update()

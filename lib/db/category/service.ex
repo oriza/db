@@ -1,8 +1,8 @@
-defmodule Db.Service.Category do
+defmodule Db.Category.Service do
   import Ecto.Query, warn: false
 
   alias Db.Repo
-  alias Db.Schema.Category
+  alias Db.Category
 
   @doc """
   Returns the list of categories.

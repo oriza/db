@@ -1,4 +1,4 @@
-defmodule Db.Schema.ArticleSelector do
+defmodule Db.Site.ArticleSelector do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -9,7 +9,7 @@ defmodule Db.Schema.ArticleSelector do
     field :category, :string
     field :content, :string
 
-    belongs_to :site, Db.Schema.Site
+    belongs_to :site, Db.Site
 
     timestamps()
   end

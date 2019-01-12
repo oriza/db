@@ -1,8 +1,8 @@
-defmodule Db.Service.Site do
+defmodule Db.Site.Service do
   import Ecto.Query, warn: false
 
   alias Db.Repo
-  alias Db.Schema.Site
+  alias Db.Site
 
   @doc """
   Returns the list of sites.
@@ -13,10 +13,11 @@ defmodule Db.Service.Site do
       [%Site{}, ...]
 
   """
-  def lists do
-    Repo.all(Site) |> Repo.preload([:archive_selector, :article_selector])
+  def lists(state \\ ["active", "selected"]) do
+    Repo.all from s in Site,
+      where: s.state in ^state,
+      preload: [:archive_selector, :article_selector]
   end
-
   @doc """
   Returns the number of sites.
 
@@ -45,6 +46,8 @@ defmodule Db.Service.Site do
 
   """
   def get!(id), do: Repo.get!(Site, id)
+
+  def get_by_name!(name), do: Repo.get_by!(Site, name: name) |> Repo.preload(:archive_selector)
 
   @doc """
   Creates a site.

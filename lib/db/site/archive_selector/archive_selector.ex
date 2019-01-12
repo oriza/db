@@ -1,4 +1,4 @@
-defmodule Db.Schema.ArchiveSelector do
+defmodule Db.Site.ArchiveSelector do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -10,7 +10,7 @@ defmodule Db.Schema.ArchiveSelector do
     field :published_at, :string
     field :category, :string
 
-    belongs_to :site, Db.Schema.Site
+    belongs_to :site, Db.Site
 
     timestamps()
   end

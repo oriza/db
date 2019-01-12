@@ -1,4 +1,4 @@
-defmodule Db.Schema.Category do
+defmodule Db.Category do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -6,7 +6,7 @@ defmodule Db.Schema.Category do
     field :name, :string
     field :alias, {:array, :string}
 
-    has_many :articles, Db.Schema.Article
+    has_many :articles, Db.Article
 
     timestamps()
   end
@@ -16,5 +16,5 @@ defmodule Db.Schema.Category do
     |> cast(attrs, [:name, :alias])
     |> validate_required([:name])
     |> unique_constraint(:name)
-  end 
+  end
 end

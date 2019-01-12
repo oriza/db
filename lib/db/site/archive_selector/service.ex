@@ -1,8 +1,8 @@
-defmodule Db.Service.ArchiveSelector do
+defmodule Db.Site.ArchiveSelector.Service do
   import Ecto.Query, warn: false
 
   alias Db.Repo
-  alias Db.Schema.ArchiveSelector
+  alias Db.Site.ArchiveSelector
 
   @doc """
   Returns the list of archive_selectors.

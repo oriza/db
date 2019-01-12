@@ -1,4 +1,4 @@
-defmodule Db.Schema.Article do
+defmodule Db.Article do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -12,8 +12,8 @@ defmodule Db.Schema.Article do
     field :author, :string
     field :extracted, :boolean, default: false
 
-    belongs_to :site, Db.Schema.Site
-    belongs_to :category, Db.Schema.Category
+    belongs_to :site, Db.Site
+    belongs_to :category, Db.Category
 
     timestamps()
   end

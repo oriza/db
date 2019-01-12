@@ -24,7 +24,9 @@ defmodule Db.MixProject do
     [
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
-      {:jason, "~> 1.1"}
+      {:jason, "~> 1.1"},
+      {:calendar, "~> 0.17.2"},
+      {:timex, "~> 3.1"}
     ]
   end
 end

@@ -1,4 +1,4 @@
-defmodule Db.Schema.Site do
+defmodule Db.Site do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -10,9 +10,9 @@ defmodule Db.Schema.Site do
     field :slug, :string
     field :state, :string
 
-    has_many :articles, Db.Schema.Article
-    has_one :archive_selector, Db.Schema.ArchiveSelector
-    has_one :article_selector, Db.Schema.ArticleSelector
+    has_many :articles, Db.Article
+    has_one :archive_selector, Db.Site.ArchiveSelector
+    has_one :article_selector, Db.Site.ArticleSelector
 
     timestamps()
   end

@@ -1,8 +1,8 @@
-defmodule Db.Service.ArticleSelector do
+defmodule Db.Site.ArticleSelector.Service do
   import Ecto.Query, warn: false
 
   alias Db.Repo
-  alias Db.Schema.ArticleSelector
+  alias Db.Site.ArticleSelector
 
   @doc """
   Returns the list of article_selectors.
