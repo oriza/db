@@ -13,9 +13,10 @@ defmodule Db.Article.Service do
       [%Article{}, ...]
 
   """
-  def lists(site_ids, limit \\ 20, offset \\ 1) do
+  def lists(site_ids, extracted \\ true, limit \\ 20, offset \\ 1) do
     Repo.all from a in Article,
       where: a.site_id in ^site_ids,
+      where: a.extracted == ^extracted,
       #where: a.category_id in ^category_ids,
       limit: ^limit,
       offset: ^offset,
@@ -82,10 +83,17 @@ defmodule Db.Article.Service do
       {:error, %Ecto.Changeset{}}
 
   """
-  def update(%Article{} = article, attrs) do
+  def update(attrs, %Article{} = article) do
+    non_empty_attrs = %{
+      author: article.author || attrs.author,
+      published_at: article.published_at || attrs.published_at,
+      category: article.category || attrs.category,
+      content: attrs.content,
+      html: attrs.html
+    }
 
     article
-    |> Article.changeset(attrs)
+    |> Article.changeset(non_empty_attrs)
     |> Repo.update()
   end
 
