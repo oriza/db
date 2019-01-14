@@ -7,6 +7,7 @@ defmodule Db.Article do
     field :url, :string
     field :description, :string
     field :html, :string
+    field :content, :string
     field :text, :string
     field :published_at, :utc_datetime
     field :author, :string
@@ -20,7 +21,7 @@ defmodule Db.Article do
 
   def changeset(article, attrs) do
     article
-    |> cast(attrs, [:title, :url, :description, :html, :text, :published_at, :author, :extracted, :site_id, :category_id])
+    |> cast(attrs, [:title, :url, :description, :html, :content, :text, :published_at, :author, :extracted, :site_id, :category_id])
     |> validate_required([:url])
     |> unique_constraint(:url)
   end
