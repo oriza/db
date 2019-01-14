@@ -12,5 +12,7 @@ defmodule Db.Repo.Migrations.CreateArticle do
 
       timestamps()
     end
+
+    create unique_index(:articles, [:url])
   end
 end
