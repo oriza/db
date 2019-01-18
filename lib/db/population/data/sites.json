@@ -394,7 +394,7 @@
         "title": "h1",
         "category": "",
         "authors": ".text-wrap p a",
-        "published_at": ".note-block p",
+        "published_at": ".note-block + p'",
         "content": ".maincontent8"
       }
     }
@@ -466,11 +466,12 @@
         "description": "p"
       },
       "article": {
-        "title": ".article-head h1",
-        "category": "",
-        "authors": "#article-meta .new-window",
-        "published_at": "#article-date",
-        "content": "#article-content"
+        "title": "#content > .article:first-of-type h1",
+        "authors": "#content > .article:first-of-type .news .author a",
+        "published": "#content > .article:first-of-type .news .timestamp",
+        "category": "#content > .article:first-of-type .tags a",
+        "content": "#content > .article:first-of-type .left",
+        "site": "nepszava"
       }
     }
   },
@@ -494,7 +495,7 @@
         "title": ".header h1",
         "category": "",
         "authors": ".author-holder .text time",
-        "published_at": ".author-area .list li",
+        "published_at": ".author-holder time",
         "content": ".ststst"
       }
     }
