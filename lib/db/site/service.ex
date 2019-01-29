@@ -13,7 +13,7 @@ defmodule Db.Site.Service do
       [%Site{}, ...]
 
   """
-  def lists(state \\ ["active", "selected"]) do
+  def lists(state \\ ["selected"]) do
     Repo.all from s in Site,
       where: s.state in ^state,
       preload: [:archive_selector, :article_selector]

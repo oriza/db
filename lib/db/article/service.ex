@@ -13,16 +13,21 @@ defmodule Db.Article.Service do
       [%Article{}, ...]
 
   """
-  def lists(site_ids, extracted \\ true, limit \\ 20, offset \\ 1) do
+  def lists(site_ids, from \\ DateTime.utc_now(), limit \\ 20) do
+    sites = convert_to_list(site_ids)
+
     Repo.all from a in Article,
-      where: a.site_id in ^site_ids,
-      where: a.extracted == ^extracted,
+      where: a.site_id in ^sites,
       #where: a.category_id in ^category_ids,
+      where: a.published_at < ^from,
       limit: ^limit,
-      offset: ^offset,
       order_by: [desc: a.published_at],
       preload: :site
   end
+
+  defp convert_to_list(nil), do: []
+  defp convert_to_list(value) when is_list(value), do: value
+  defp convert_to_list(value), do: [value]
 
   @doc """
   Returns the number of articles.
