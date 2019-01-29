@@ -24,5 +24,20 @@ defmodule Db.Article do
     |> cast(attrs, [:title, :url, :description, :html, :content, :text, :published_at, :author, :extracted, :site_id, :category_id])
     |> validate_required([:url])
     |> unique_constraint(:url)
+    |> format_text(:title)
+    |> format_text(:description)
+    |> format_text(:content)
   end
+
+  defp format_text(changeset, key) do
+    case changeset do
+      %Ecto.Changeset{valid?: true, changes: changes} ->
+        put_change(changeset, key, remove_tags(changes[key]))
+      _ ->
+        changeset
+    end
+  end
+
+  defp remove_tags(nil), do: ""
+  defp remove_tags(text), do: String.replace(text, ~r/<[^>]*>/, "")
 end
