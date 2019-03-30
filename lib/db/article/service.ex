@@ -13,13 +13,13 @@ defmodule Db.Article.Service do
       [%Article{}, ...]
 
   """
-  def lists(site_ids, from \\ DateTime.utc_now(), limit \\ 20) do
+  def lists(site_ids, till \\ DateTime.utc_now(), limit \\ 20) do
     sites = convert_to_list(site_ids)
 
     Repo.all from a in Article,
       where: a.site_id in ^sites,
       #where: a.category_id in ^category_ids,
-      where: a.published_at < ^from,
+      where: a.published_at < ^till,
       limit: ^limit,
       order_by: [desc: a.published_at],
       preload: :site
