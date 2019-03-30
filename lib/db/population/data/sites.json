@@ -152,8 +152,8 @@
   {
     "name": "origo",
     "url": "http://origo.hu",
-    "feed": "http://www.origo.hu/contentpartner/rss/origoall/origo.xml",
-    "archive": "http://www.origo.hu/hir-archivum/2017/20170301.html",
+    "feed": "https://www.origo.hu/contentpartner/rss/origoall/origo.xml",
+    "archive": "https://www.origo.hu/hir-archivum/2017/20170301.html",
     "state": "selected",
     "slug": "origo",
     "selectors": {
@@ -279,7 +279,7 @@
     "url": "http://mandiner.hu",
     "feed": "http://mandiner.hu/rss/",
     "archive": "http://mandiner.hu/tag/belfold",
-    "state": "active",
+    "state": "inactive",
     "slug": "mandiner",
     "selectors": {
       "archive": {
@@ -304,7 +304,7 @@
     "url": "https://vs.hu",
     "feed": "https://vs.hu/feed",
     "archive": "https://vs.hu/archivum",
-    "state": "selected",
+    "state": "inactive",
     "slug": "vs",
     "selectors": {
       "archive": {
@@ -351,10 +351,10 @@
   },
   {
     "name": "magyar nemzet",
-    "url": "https://mno.hu",
-    "feed": "https://mno.hu/rss/",
+    "url": "https://magyarnemzet.hu",
+    "feed": "https://magyarnemzet.hu/feed/?",
     "archive": "https://mno.hu/belfold",
-    "state": "inactive",
+    "state": "active",
     "slug": "magyar-nemzet",
     "selectors": {
       "archive": {
@@ -404,7 +404,7 @@
     "url": "https://magyaridok.hu",
     "feed": "https://magyaridok.hu/feed/",
     "archive": "https://magyaridok.hu/?s=",
-    "state": "selected",
+    "state": "inactive",
     "slug": "magyar-idok",
     "selectors": {
       "archive": {
@@ -452,7 +452,7 @@
   {
     "name": "népszava",
     "url": "https://nepszava.hu",
-    "feed": "https://nepszava.hu/rss/",
+    "feed": "https://nepszava.hu/rss",
     "archive": "https://nepszava.hu/belfold/",
     "state": "active",
     "slug": "nepszava",
