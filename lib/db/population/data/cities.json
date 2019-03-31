@@ -1,0 +1,116 @@
+[
+  {
+    "openweather_id": 722437,
+    "city": "Békéscsaba",
+    "longitude": 21.1,
+    "latitude": 46.683331
+  },
+  {
+    "openweather_id": 3054643,
+    "city": "Budapest",
+    "longitude": 19.039909,
+    "latitude": 47.498009
+  },
+  {
+    "openweather_id": 721472,
+    "city": "Debrecen",
+    "longitude": 21.633329,
+    "latitude": 47.533329
+  },
+  {
+    "openweather_id": 721239,
+    "city": "Eger",
+    "longitude": 20.373289,
+    "latitude": 47.902649
+  },
+  {
+    "openweather_id": 3052009,
+    "city": "Győr",
+    "longitude": 17.63512,
+    "latitude": 47.683331
+  },
+  {
+    "openweather_id": 3050616,
+    "city": "Kaposvár",
+    "longitude": 17.799999,
+    "latitude": 46.366669
+  },
+  {
+    "openweather_id": 3050434,
+    "city": "Kecskemet",
+    "longitude": 19.69128,
+    "latitude": 46.906181
+  },
+  {
+    "openweather_id": 717582,
+    "city": "Miskolc",
+    "longitude": 20.783331,
+    "latitude": 48.099998
+  },
+  {
+    "openweather_id": 716935,
+    "city": "Nyíregyháza",
+    "longitude": 21.716709,
+    "latitude": 47.955391
+  },
+  {
+    "openweather_id": 3046526,
+    "city": "Pécs",
+    "longitude": 18.23333,
+    "latitude": 46.083328
+  },
+  {
+    "openweather_id": 3045643,
+    "city": "Salgótarján",
+    "longitude": 19.80303,
+    "latitude": 48.098721
+  },
+  {
+    "openweather_id": 715429,
+    "city": "Szeged",
+    "longitude": 20.148239,
+    "latitude": 46.252998
+  },
+  {
+    "openweather_id": 3044760,
+    "city": "Szekszárd",
+    "longitude": 18.709049,
+    "latitude": 46.35014
+  },
+  {
+    "openweather_id": 3043124,
+    "city": "Székesfehérvár",
+    "longitude": 18.41667,
+    "latitude": 47.200001
+  },
+  {
+    "openweather_id": 715126,
+    "city": "Szolnok",
+    "longitude": 20.200001,
+    "latitude": 47.183331
+  },
+  {
+    "openweather_id": 3044310,
+    "city": "Szombathely",
+    "longitude": 16.62155,
+    "latitude": 47.230881
+  },
+  {
+    "openweather_id": 3044082,
+    "city": "Tatabánya",
+    "longitude": 18.39325,
+    "latitude": 47.584942
+  },
+  {
+    "openweather_id": 3042929,
+    "city": "Veszprém",
+    "longitude": 17.911489,
+    "latitude": 47.093269
+  },
+  {
+    "openweather_id": 3042638,
+    "city": "Zalaegerszeg",
+    "longitude": 16.843889,
+    "latitude": 46.84
+  }
+]
