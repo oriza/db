@@ -2,7 +2,7 @@ defmodule Db.Population do
   import Ecto.Query, warn: false
 
   alias Db.Repo
-  alias Db.{Site, Category}
+  alias Db.{Site, Category, Calendar}
   alias Site.{ArchiveSelector, ArticleSelector}
 
   def populate_all() do
@@ -34,5 +34,14 @@ defmodule Db.Population do
     |> File.read!
     |> Jason.decode!
     |> Enum.each(fn category -> Category.Service.create(category) end)
+  end
+
+  def populate_calendar() do
+    Repo.delete_all(Calendar)
+
+    "lib/db/population/data/calendar.json"
+    |> File.read!
+    |> Jason.decode!
+    |> Enum.each(fn day -> Calendar.Service.create(day) end)
   end
 end
