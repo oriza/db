@@ -2,12 +2,15 @@ defmodule Db.Population do
   import Ecto.Query, warn: false
 
   alias Db.Repo
-  alias Db.{Site, Category, Calendar, Weather}
+  alias Db.{Site, Category, Calendar, Weather, Bank}
   alias Site.{ArchiveSelector, ArticleSelector}
 
   def populate_all() do
     populate_sites()
     populate_categories()
+    populate_calendar()
+    populate_weather()
+    populate_banks()
   end
 
   def populate_sites() do
@@ -52,5 +55,14 @@ defmodule Db.Population do
     |> File.read!
     |> Jason.decode!
     |> Enum.each(fn city -> Weather.Service.create(city) end)
+  end
+
+  def populate_banks() do
+    Repo.delete_all(Bank)
+
+    "lib/db/population/data/banks.json"
+    |> File.read!
+    |> Jason.decode!
+    |> Enum.each(fn bank -> Bank.Service.create(bank) end)
   end
 end
