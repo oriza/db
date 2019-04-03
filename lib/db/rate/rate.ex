@@ -5,6 +5,7 @@ defmodule Db.Rate do
   schema "rates" do
     field :currency, :string
     field :value, :float
+    field :did_grow, :boolean
 
     belongs_to :bank, Db.Bank
 
@@ -13,6 +14,6 @@ defmodule Db.Rate do
 
   def changeset(rate, attrs) do
     rate
-    |> cast(attrs, [:currency, :value, :bank_id])
+    |> cast(attrs, [:currency, :value, :did_grow, :bank_id])
   end
 end
