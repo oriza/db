@@ -277,7 +277,7 @@
   {
     "name": "mandiner",
     "url": "http://mandiner.hu",
-    "feed": "http://mandiner.hu/rss/",
+    "feed": "https://mandiner.hu/rss/",
     "archive": "http://mandiner.hu/tag/belfold",
     "state": "inactive",
     "slug": "mandiner",
