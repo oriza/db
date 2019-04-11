@@ -33,12 +33,14 @@ defmodule Db.Rate.Service do
   end
 
   defp did_grow(old_rate, new_rate) do
+    {new_value, _} = Float.parse(new_rate.value)
+
     cond do
-      old_rate.value == new_rate.value ->
+      old_rate.value == new_value ->
         old_rate.did_grow
-      old_rate.value > new_rate.value ->
+      old_rate.value > new_value ->
         true
-      old_rate.value < new_rate.value ->
+      old_rate.value < new_value ->
         false
     end
   end
