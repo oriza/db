@@ -8,7 +8,6 @@ defmodule Db.Article do
     field :description, :string
     field :html, :string
     field :content, :string
-    field :text, :string
     field :published_at, :utc_datetime
     field :author, :string
     field :extracted, :boolean, default: false
@@ -21,7 +20,7 @@ defmodule Db.Article do
 
   def changeset(article, attrs) do
     article
-    |> cast(attrs, [:title, :url, :description, :html, :content, :text, :published_at, :author, :extracted, :site_id, :category_id])
+    |> cast(attrs, [:title, :url, :description, :html, :content, :published_at, :author, :extracted, :site_id, :category_id])
     |> validate_required([:url])
     |> unique_constraint(:url)
     |> format_text(:title)
@@ -32,7 +31,11 @@ defmodule Db.Article do
   defp format_text(changeset, key) do
     case changeset do
       %Ecto.Changeset{valid?: true, changes: changes} ->
-        put_change(changeset, key, remove_tags(changes[key]))
+        if changes[key] != nil do
+          put_change(changeset, key, remove_tags(changes[key]))
+        else
+          changeset
+        end
       _ ->
         changeset
     end

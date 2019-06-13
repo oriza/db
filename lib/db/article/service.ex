@@ -88,19 +88,23 @@ defmodule Db.Article.Service do
       {:error, %Ecto.Changeset{}}
 
   """
-  def update(attrs, %Article{} = article) do
-    non_empty_attrs = %{
-      author: article.author || attrs.author,
-      published_at: article.published_at || attrs.published_at,
-      category: article.category || attrs.category,
-      content: attrs.content,
-      html: attrs.html
-    }
-
+  def update(%Article{} = article, attrs) do
     article
-    |> Article.changeset(non_empty_attrs)
+    |> Article.changeset(attrs)
     |> Repo.update()
   end
+
+  defp get_non_empty(items) when is_list(items) do
+    [head | tail] = items
+
+    if head == nil or String.trim(head) == "" do
+      get_non_empty(tail)
+    else
+      head
+    end
+  end
+
+  defp get_non_empty(_), do: nil
 
   @doc """
   Deletes a Article.

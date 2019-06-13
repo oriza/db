@@ -10,16 +10,16 @@
       "archive": {
         "title": "h1",
         "category": "",
-        "authors": ".cikkSzerzo",
-        "published_at": ".cikkDatum.centered",
+        "author": ".cikkSzerzo",
+        "publishedAt": ".cikkDatum.centered",
         "container": ".cikkBlock.kethasabos",
         "description": ".lead"
       },
       "article": {
         "title": "",
         "category": "",
-        "authors": "",
-        "published_at": "",
+        "author": "",
+        "publishedAt": "",
         "content": ""
       }
     }
@@ -35,17 +35,17 @@
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": ".publisheddiv",
+        "author": "",
+        "publishedAt": ".publisheddiv",
         "container": ".wrapper1",
         "description": ".article_lead"
       },
       "article": {
-        "title": ".articlenode.articlecompactnode h1",
-        "category": "",
-        "authors": ".inner .articlenode.articlecompactnode .article_author",
-        "published_at": ".article_published",
-        "content": ".article_text.gainlayout"
+        "title": ".articlehead h1",
+        "category": ".rovathead h2 a",
+        "author": ".articlehead .article_author",
+        "publishedAt": ".articlehead .article_published span",
+        "content": ".articlenode .article_text"
       }
     }
   },
@@ -60,17 +60,17 @@
       "archive": {
         "title": "h3 a",
         "category": "",
-        "authors": ".the_author",
-        "published_at": "time",
+        "author": ".the_author",
+        "publishedAt": "time",
         "container": "article",
         "description": ".the_text"
       },
       "article": {
-        "title": ".heading.n9 h1",
-        "category": ".heading.n9 a",
-        "authors": ".the_author.ib",
-        "published_at": ".the_post_date",
-        "content": ".the_content"
+        "title": ".heading .the_title",
+        "category": ".heading .the_category",
+        "author": ".post_content .author_url",
+        "publishedAt": ".post_content .the_post_date",
+        "content": ".post_content .the_content > :not(.facebook_comments_trigger, #the_share_under)"
       }
     }
   },
@@ -85,17 +85,17 @@
       "archive": {
         "title": "h3 a",
         "category": "",
-        "authors": ".byline__authors",
-        "published_at": "",
+        "author": ".byline__author",
+        "publishedAt": "",
         "container": ".card",
         "description": "p"
       },
       "article": {
         "title": "#headline h1",
-        "category": "#headline .byline__info .byline__category",
-        "authors": "#headline .byline__info .byline__authors",
-        "published_at": "#headline .byline__info span:nth-of-type(5)",
-        "content": "#content-main"
+        "category": "#headline .byline__category a",
+        "author": "#headline .byline__authors a",
+        "publishedAt": "#headline .byline__info span:nth-of-type(5)",
+        "content": "#content-main article > :not(footer)"
       }
     }
   },
@@ -110,17 +110,17 @@
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": ".datum.cikk-date-label",
+        "author": "",
+        "publishedAt": ".datum.cikk-date-label",
         "container": ".rovatajanlo",
         "description": "p"
       },
       "article": {
         "title": ".content-title h1",
         "category": ".cikk-cimkek li:first-of-type",
-        "authors": ".szerzo a",
-        "published_at": ".datum",
-        "content": ".cikk-torzs > :not(.nm_widget__wrapper)"
+        "author": ".szerzo a",
+        "publishedAt": ".datum span:first-of-type",
+        "content": ".cikk-torzs > :not(.m-automatic-file-snippet, .nm_mini__wrapper, .nm_widget__wrapper)"
       }
     }
   },
@@ -135,16 +135,16 @@
       "archive": {
         "title": "h3 a",
         "category": "",
-        "authors": ".author-content",
-        "published_at": ".post-date",
+        "author": ".author-content",
+        "publishedAt": ".post-date",
         "container": "article",
         "description": ".lead.lead-after-wrap"
       },
       "article": {
-        "title": ".post-title-wrapper h1",
-        "category": ".categori_name",
-        "authors": ".author-content a",
-        "published_at": ".author-content p",
+        "title": ".o-post__title span",
+        "category": ".o-articleHead__catWrap:first-of-type",
+        "author": ".m-author__authorLinkWrap a",
+        "publishedAt": ".m-author__wrapCatDateTitulus",
         "content": ".post-body"
       }
     }
@@ -160,16 +160,16 @@
       "archive": {
         "title": "h3 a",
         "category": "",
-        "authors": "",
-        "published_at": "span",
+        "author": "",
+        "publishedAt": "span",
         "container": ".archive-cikk",
         "description": ""
       },
       "article": {
         "title": "#article-head h1",
         "category": "#breadcrumb a",
-        "authors": ".article-author",
-        "published_at": "#article-date",
+        "author": ".article-author",
+        "publishedAt": "#article-date",
         "content": "#article-text"
       }
     }
@@ -185,17 +185,17 @@
       "archive": {
         "title": "a",
         "category": "",
-        "authors": "",
-        "published_at": "",
+        "author": "",
+        "publishedAt": "",
         "container": ".simple.list-element",
         "description": "p"
       },
       "article": {
         "title": ".article-page-main-title",
         "category": "#breadcrumb a",
-        "authors": ".top-bar",
-        "published_at": ".top-bar",
-        "content": "#article-content"
+        "author": ".top-bar",
+        "publishedAt": ".top-bar",
+        "content": "#article-content > :not(.fb-share-button)"
       }
     }
   },
@@ -210,16 +210,16 @@
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": ".info span",
-        "published_at": "time",
+        "author": ".info span",
+        "publishedAt": "time",
         "container": ".articlelist-element.clear",
         "description": "p"
       },
       "article": {
         "title": ".article-title",
-        "category": ".info .uppercase",
-        "authors": ".author-name",
-        "published_at": ".article-datetime",
+        "category": ".article-info .info .uppercase",
+        "author": ".author-name",
+        "publishedAt": ".article-datetime",
         "content": ".article-main"
       }
     }
@@ -235,16 +235,16 @@
       "archive": {
         "title": "h4 a",
         "category": "",
-        "authors": "em",
-        "published_at": "",
+        "author": "em",
+        "publishedAt": "",
         "container": ".noimg",
         "description": "p"
       },
       "article": {
-        "title": ".box_cikkhead h1",
-        "category": "",
-        "authors": ".szerzoTextBg",
-        "published_at": ".update_time",
+        "title": "h1",
+        "category": ".box.breadcrumb li:last-of-type a",
+        "author": "#mainCikkBody + .cikkbar  .szerzoText div:last-of-type",
+        "publishedAt": "#mainCikkBody + .cikkbar .update_time",
         "content": ".cikkbody clr"
       }
     }
@@ -260,16 +260,16 @@
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": ".szerzo",
-        "published_at": "",
+        "author": ".szerzo",
+        "publishedAt": "",
         "container": ".text",
         "description": ".lead"
       },
       "article": {
         "title": "h1",
         "category": "",
-        "authors": ".toolbar a",
-        "published_at": ".datum",
+        "author": ".toolbar a",
+        "publishedAt": ".datum",
         "content": ".szoveg"
       }
     }
@@ -279,22 +279,22 @@
     "url": "http://mandiner.hu",
     "feed": "https://mandiner.hu/rss/",
     "archive": "http://mandiner.hu/tag/belfold",
-    "state": "inactive",
+    "state": "active",
     "slug": "mandiner",
     "selectors": {
       "archive": {
         "title": "a",
         "category": "",
-        "authors": "",
-        "published_at": ".info",
+        "author": "",
+        "publishedAt": ".info",
         "container": ".news_list_row",
         "description": ".lead"
       },
       "article": {
         "title": "h1",
         "category": "",
-        "authors": ".articletext span:first-of-type",
-        "published_at": ".info",
+        "author": ".articletext span:first-of-type",
+        "publishedAt": ".info",
         "content": ".text"
       }
     }
@@ -310,16 +310,16 @@
       "archive": {
         "title": "h3",
         "category": "",
-        "authors": "",
-        "published_at": "",
+        "author": "",
+        "publishedAt": "",
         "container": ".column",
         "description": "p"
       },
       "article": {
         "title": ".inner_content h1",
         "category": "",
-        "authors": ".author span span",
-        "published_at": ".date",
+        "author": ".author span span",
+        "publishedAt": ".date",
         "content": ".content"
       }
     }
@@ -335,17 +335,17 @@
       "archive": {
         "title": ".widget-full-list-text a",
         "category": "",
-        "authors": ".widget-post-author",
-        "published_at": ".widget-post-date",
+        "author": ".widget-post-author",
+        "publishedAt": ".widget-post-date",
         "container": ".infinite-post",
         "description": "p"
       },
       "article": {
         "title": ".story-title.entry-title",
-        "category": "",
-        "authors": ".author-name a",
-        "published_at": ".post-date-wrap",
-        "content": "#content-area"
+        "category": ".img-cat",
+        "author": ".author-info-wrap .author-name a",
+        "publishedAt": "#left-content time",
+        "content": "#content-area > :not(#wpdevar_comment_3, .post-tags)"
       }
     }
   },
@@ -360,17 +360,17 @@
       "archive": {
         "title": "h3 a",
         "category": "",
-        "authors": ".szerzo",
-        "published_at": ".datum",
+        "author": ".szerzo",
+        "publishedAt": ".datum",
         "container": ".box",
         "description": ".lead"
       },
       "article": {
         "title": "h1",
-        "category": "",
-        "authors": ".szerzo",
-        "published_at": ".datum",
-        "content": ".content.hircikk.clearfix"
+        "category": ".en-article-header-column a",
+        "author": ".en-article-header-column a",
+        "publishedAt": ".en-article-dates-main",
+        "content": ".entry-content"
       }
     }
   },
@@ -385,16 +385,16 @@
       "archive": {
         "title": "figcaption a",
         "category": "",
-        "authors": "",
-        "published_at": "",
+        "author": "",
+        "publishedAt": "",
         "container": ".fig-wrap",
         "description": ".text-box"
       },
       "article": {
-        "title": "h1",
+        "title": "h1:first-of-type",
         "category": "",
-        "authors": ".text-wrap p a",
-        "published_at": ".note-block + p'",
+        "author": ".note-block .text-wrap",
+        "publishedAt": ".note-block + p",
         "content": ".maincontent8"
       }
     }
@@ -410,16 +410,16 @@
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": ".en-article-date",
+        "author": "",
+        "publishedAt": ".en-article-date",
         "container": ".et_pb_row.article.clearfix",
         "description": "p"
       },
       "article": {
         "title": "h1",
         "category": "",
-        "authors": ".en-article-author",
-        "published_at": ".en-article-dates-main",
+        "author": ".en-article-author",
+        "publishedAt": ".en-article-dates-main",
         "content": ".entry-content"
       }
     }
@@ -435,17 +435,17 @@
       "archive": {
         "title": ".views-field-title a",
         "category": "",
-        "authors": "",
-        "published_at": ".views-field.views-field-created",
+        "author": "",
+        "publishedAt": ".views-field.views-field-created",
         "container": ".views-row-first",
         "description": ".views-field-field-lead"
       },
       "article": {
-        "title": "#page-title",
+        "title": "h1",
         "category": "",
-        "authors": "panel-pane.pane-custom.pane-1.pane-author",
-        "published_at": ".panel-pane:nth-of-type(3)",
-        "content": ".panel-pane.pane-entity-field.pane-node-body"
+        "author": ".field--name-username a",
+        "publishedAt": ".region-content > .node--type-article .field--name-node-post-date",
+        "content": ".article-content-elements"
       }
     }
   },
@@ -454,21 +454,21 @@
     "url": "https://nepszava.hu",
     "feed": "https://nepszava.hu/rss",
     "archive": "https://nepszava.hu/belfold/",
-    "state": "active",
+    "state": "inactive",
     "slug": "nepszava",
     "selectors": {
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": ".tags",
+        "author": "",
+        "publishedAt": ".tags",
         "container": ".ts",
         "description": "p"
       },
       "article": {
         "title": "#content > .article:first-of-type h1",
-        "authors": "#content > .article:first-of-type .news .author a",
-        "published": "#content > .article:first-of-type .news .timestamp",
+        "author": "#content > .article:first-of-type .news .author a",
+        "publishedAt": "#content > .article:first-of-type .news .timestamp",
         "category": "#content > .article:first-of-type .tags a",
         "content": "#content > .article:first-of-type .left",
         "site": "nepszava"
@@ -486,16 +486,16 @@
       "archive": {
         "title": "h2 a",
         "category": "",
-        "authors": "",
-        "published_at": ".text",
+        "author": "",
+        "publishedAt": ".text",
         "container": ".article-detail",
         "description": "p a"
       },
       "article": {
         "title": ".header h1",
-        "category": "",
-        "authors": ".author-holder .text time",
-        "published_at": ".author-holder time",
+        "category": ".author-area > .list li:first-of-type",
+        "author": ".author-holder .text",
+        "publishedAt": ".author-holder time",
         "content": ".ststst"
       }
     }
@@ -511,17 +511,17 @@
       "archive": {
         "title": "a",
         "category": "",
-        "authors": "",
-        "published_at": ".datum",
+        "author": "",
+        "publishedAt": ".datum",
         "container": ".newsrow",
         "description": "div:last-of-type"
       },
       "article": {
         "title": ".home_title h1",
         "category": "",
-        "authors": ".editors",
-        "published_at": ".datum",
-        "content": ".content"
+        "author": ".editors",
+        "publishedAt": ".datum",
+        "content": ".content > :not(#szerk, #disqus_thread)"
       }
     }
   },
@@ -536,16 +536,16 @@
       "archive": {
         "title": ".entry-text a",
         "category": "",
-        "authors": ".meta-author",
-        "published_at": "time",
+        "author": ".meta-author",
+        "publishedAt": "time",
         "container": "article",
         "description": "p"
       },
       "article": {
         "title": ".main-article-header h1",
         "category": ".main-article-header .tag",
-        "authors": ".meta-data.track-cat .byline",
-        "published_at": ".meta-time",
+        "author": ".meta-data.track-cat .byline",
+        "publishedAt": ".meta-time",
         "content": ".entry-content"
       }
     }

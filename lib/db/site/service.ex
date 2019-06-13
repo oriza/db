@@ -45,9 +45,9 @@ defmodule Db.Site.Service do
       ** (Ecto.NoResultsError)
 
   """
-  def get!(id), do: Repo.get!(Site, id)
+  def get!(id), do: Repo.get!(Site, id) |> Repo.preload([:article_selector, :archive_selector])
 
-  def get_by_name!(name), do: Repo.get_by!(Site, name: name) |> Repo.preload(:archive_selector)
+  def get_by_name!(name), do: Repo.get_by!(Site, name: name) |> Repo.preload([:article_selector, :archive_selector])
 
   @doc """
   Creates a site.

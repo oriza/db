@@ -80,6 +80,7 @@ defmodule Db.Site.ArticleSelector.Service do
     article_selector
     |> ArticleSelector.changeset(attrs)
     |> Repo.update()
+    |> IO.inspect
   end
 
   @doc """
